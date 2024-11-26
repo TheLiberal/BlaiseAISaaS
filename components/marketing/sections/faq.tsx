@@ -14,34 +14,31 @@ import { Routes } from '@/constants/routes';
 const DATA = [
   {
     question: `What does ${AppInfo.APP_NAME} do?`,
-    answer: `This is a demo application built with Achromatic. It will save you time and effort building your next SaaS. Here you would write something like "${AppInfo.APP_NAME} helps you manage customer relationships, organize sales activities and improve service delivery to make your business more efficient and successful."`
+    answer: `${AppInfo.APP_NAME} is your AI-powered Slack assistant for enhanced customer support and team collaboration. It provides instant answers to common questions, freeing up your team to focus on higher-value tasks.`
   },
   {
     question: 'How will this benefit my business?',
-    answer: `By centralizing your customer data and automating tasks, ${AppInfo.APP_NAME} makes it easier to track leads, manage your sales pipeline and collaborate with your team, saving you time and boosting your productivity.`
+    answer: `By automating responses to repetitive inquiries, ${AppInfo.APP_NAME} drastically reduces CSM time spent on Slack, boosting productivity and allowing for more meaningful client interactions. It also saves you money by reducing the need for additional support staff.`
   },
   {
     question: 'Is my data safe?',
-    answer:
-      'Your data security is our top priority. We use advanced encryption and follow industry-standard security measures to keep your information protected and compliant.'
+    answer: `Absolutely.  ${AppInfo.APP_NAME} only uses data from your approved sources (e.g., course content, call recordings, Slack conversations). We prioritize your data security and follow industry best practices to keep your information protected.`
   },
   {
     question: 'What kind of integrations are available?',
-    answer: `${AppInfo.APP_NAME} supports integration with various business tools, including CRMs, email marketing software and collaboration platforms. Connect with Salesforce, HubSpot and more to create a seamless workflow.`
+    answer: `${AppInfo.APP_NAME} integrates directly with Slack and can pull information from a variety of sources, such as Notion, Google Docs, and more. We are also exploring integration with CRM platforms like Kajabi.`
   },
   {
     question: 'How easy is it to onboard my team?',
-    answer:
-      'The platform is designed for easy onboarding, with intuitive interfaces and step-by-step guides to help your team get up and running quickly.'
+    answer: `We've designed ${AppInfo.APP_NAME} for easy onboarding. Blaise provides quick setup, intuitive prompts, and customized training to ensure a smooth transition for your team. `
   },
   {
     question: 'What types of businesses can use this?',
-    answer: `${AppInfo.APP_NAME} is suitable for businesses of all sizes and industries, from startups to large enterprises, looking to streamline their customer relationship management.`
+    answer: `Any business that uses Slack for internal communications or customer support can benefit from ${AppInfo.APP_NAME}. It's particularly valuable for online courses, coaching programs, and other membership communities.`
   },
   {
     question: 'Can I customize this to fit my business needs?',
-    answer:
-      'Absolutely. You can customize workflows, fields and templates to suit the unique needs of your business.'
+    answer: `Yes, ${AppInfo.APP_NAME} can be tailored to your specific requirements. We can work with you to define custom prompts, integrate with your specific data sources, and create a truly personalized experience.`
   }
 ];
 

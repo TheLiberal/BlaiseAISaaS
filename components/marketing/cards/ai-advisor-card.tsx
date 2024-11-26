@@ -71,12 +71,12 @@ export function AiAdvisorCard(props: CardProps): React.JSX.Element {
             <GlobeIcon className="size-4 text-muted-foreground" />
             <span className="w-20 text-sm text-muted-foreground">Domain</span>
             <Link
-              href="https://vercel.com"
+              href="https://blaiseai.com"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-blue-500"
             >
-              https://vercel.com
+              https://blaiseai.com
             </Link>
           </div>
           <div className="flex items-center gap-2">
