@@ -8,22 +8,22 @@ const DATA = [
   {
     value: 55,
     suffix: '%',
-    description: 'Increased conversion'
+    description: 'Increased NPS'
   },
   {
     value: 4,
     suffix: 'x',
-    description: 'Improved retention'
+    description: 'Decreased Refund Rate'
   },
   {
     value: 97,
     suffix: '%',
-    description: 'Statisfaction rate'
+    description: 'Success rate'
   },
   {
-    value: 450,
+    value: 559,
     suffix: '+',
-    description: 'Customers in 85 countries'
+    description: 'Customers in 15+ countries'
   }
 ];
 

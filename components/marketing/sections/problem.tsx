@@ -10,19 +10,19 @@ const DATA = [
     icon: <UserPlusIcon className="size-5 shrink-0" />,
     title: 'Problem 1',
     description:
-      'Describe a significant problem your ideal customer profile has. Explain how this problem impacts their goals or daily operations.'
+      'Solving customer problems is a critical part of customer success. But it takes time to provide exceptional support and coaching.'
   },
   {
     icon: <BarChartIcon className="size-5 shrink-0" />,
     title: 'Problem 2',
     description:
-      'Describe a significant problem your ideal customer profile has. Explain how this problem impacts their goals or daily operations.'
+      'Hiring talented customer success maangers is expensive and difficult. They need training and support to succeed.'
   },
   {
     icon: <WorkflowIcon className="size-5 shrink-0" />,
     title: 'Problem 3',
     description:
-      'Describe a significant problem your ideal customer profile has. Explain how this problem impacts their goals or daily operations.'
+      "Q&A calls are expensive and time-consuming, yet they're rarely put to use and sit in your content library gathering dust."
   }
 ];
 
@@ -31,7 +31,7 @@ export function Problem(): React.JSX.Element {
     <GridSection>
       <div className="px-4 py-20 text-center">
         <h2 className="text-3xl font-semibold md:text-5xl">
-          <TextGenerateWithSelectBoxEffect words="Attention Grabbing Title" />
+          <TextGenerateWithSelectBoxEffect words="Exceptional Customer Support Is Difficult" />
         </h2>
       </div>
       <div className="grid divide-y border-t border-dashed md:grid-cols-3 md:divide-x md:divide-y-0">

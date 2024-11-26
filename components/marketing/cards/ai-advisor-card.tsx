@@ -6,11 +6,9 @@ import {
   GlobeIcon,
   LineChartIcon,
   MapPinIcon,
-  TagsIcon,
   User2Icon
 } from 'lucide-react';
 
-import { Badge } from '@/components/ui/badge';
 import {
   Card,
   CardContent,
@@ -66,7 +64,7 @@ export function AiAdvisorCard(props: CardProps): React.JSX.Element {
       <CardContent className="pt-6">
         <div className="mb-3 flex items-center gap-2">
           <VercelLogo />
-          <h2 className="text-xl font-semibold">Vercel</h2>
+          <h2 className="text-xl font-semibold">Blaise AI</h2>
         </div>
         <div className="space-y-2">
           <div className="flex items-center gap-2">
@@ -83,54 +81,42 @@ export function AiAdvisorCard(props: CardProps): React.JSX.Element {
           </div>
           <div className="flex items-center gap-2">
             <User2Icon className="size-4 text-muted-foreground" />
-            <span className="w-20 text-sm text-muted-foreground">CEO</span>
-            <span className="text-sm">Guillermo Rauch</span>
+            <span className="w-20 text-sm text-muted-foreground">
+              Job Title
+            </span>
+            <span className="text-sm">AI Customer Success Manager</span>
           </div>
           <div className="flex items-center gap-2">
             <CalendarIcon className="size-4 text-muted-foreground" />
             <span className="w-20 text-sm text-muted-foreground">Founded</span>
-            <span className="text-sm">2015</span>
+            <span className="text-sm">2024</span>
           </div>
           <div className="flex items-center gap-2">
             <LineChartIcon className="size-4 text-muted-foreground" />
-            <span className="w-20 text-sm text-muted-foreground">Est. ARR</span>
-            <span className="text-sm">$100-120M</span>
+            <span className="w-20 text-sm text-muted-foreground">
+              Problems Solved
+            </span>
+            <span className="text-sm">9369</span>
           </div>
           <div className="flex items-center gap-2">
             <MapPinIcon className="size-4 text-muted-foreground" />
             <span className="w-20 text-sm text-muted-foreground">Location</span>
-            <span className="text-sm">California, USA</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <TagsIcon className="size-4 text-muted-foreground" />
-            <span className="w-20 text-sm text-muted-foreground">Tags</span>
-            <div className="flex gap-1">
-              <Badge
-                variant="secondary"
-                className="whitespace-nowrap pl-2 text-xs"
-              >
-                SaaS
-              </Badge>
-              <Badge
-                variant="secondary"
-                className="whitespace-nowrap pl-2 text-xs"
-              >
-                B2B
-              </Badge>
-            </div>
+            <span className="text-sm">Internet</span>
           </div>
           <div className="flex items-center gap-2">
             <DollarSignIcon className="size-4 text-muted-foreground" />
-            <span className="w-20 text-sm text-muted-foreground">Funding</span>
-            <span className="text-sm">$250M Series E</span>
+            <span className="w-20 text-sm text-muted-foreground">
+              Ready To Work?
+            </span>
+            <span className="text-sm">Same Day</span>
           </div>
         </div>
       </CardContent>
       <CardFooter className="flex-col items-start space-y-4 rounded-b-xl bg-neutral-50 pt-6 dark:bg-neutral-900">
         <h3 className="text-base font-semibold sm:text-lg">AI Advisor</h3>
         <div className="min-h-10 max-w-md text-sm text-muted-foreground">
-          Vercel has been contacted 4 times in the past year. Suggested next
-          contact is in 3 days.
+          Blaise AI currently solves an average of 749 customer problems per
+          day.
         </div>
       </CardFooter>
     </Card>

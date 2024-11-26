@@ -146,7 +146,7 @@ export function Navbar(): React.JSX.Element {
                 'rounded-xl'
               )}
             >
-              Start for free
+              Get Started
             </Link>
           </div>
         </nav>

@@ -2,11 +2,9 @@
 
 import * as React from 'react';
 import GoogleLogo from 'public/google-logo.svg';
-import MicrosoftLogo from 'public/microsoft-logo.svg';
 import { toast } from 'sonner';
 
 import { continueWithGoogle } from '@/actions/auth/continue-with-google';
-import { continueWithMicrosoft } from '@/actions/auth/continue-with-microsoft';
 import { BlurFade } from '@/components/marketing/fragments/blur-fade';
 import { GridSection } from '@/components/marketing/fragments/grid-section';
 import { TextGenerateEffect } from '@/components/marketing/fragments/text-generate-effect';
@@ -20,17 +18,6 @@ export function CTA(): React.JSX.Element {
     }
     setIsLoading(true);
     const result = await continueWithGoogle();
-    if (result?.serverError || result?.validationErrors) {
-      toast.error("Couldn't sign up with Google");
-    }
-    setIsLoading(false);
-  };
-  const handleSignInWithMicrosoft = async (): Promise<void> => {
-    if (isLoading) {
-      return;
-    }
-    setIsLoading(true);
-    const result = await continueWithMicrosoft();
     if (result?.serverError || result?.validationErrors) {
       toast.error("Couldn't sign up with Google");
     }
@@ -55,18 +42,6 @@ export function CTA(): React.JSX.Element {
                 height="20"
               />
               Sign up with Google
-            </Button>
-            <Button
-              type="button"
-              variant="outline"
-              className="h-10 gap-2 whitespace-nowrap rounded-full"
-              onClick={handleSignInWithMicrosoft}
-            >
-              <MicrosoftLogo
-                width="20"
-                height="20"
-              />
-              Sign up with Microsoft
             </Button>
           </div>
         </BlurFade>

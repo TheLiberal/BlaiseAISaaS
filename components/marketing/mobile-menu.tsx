@@ -128,7 +128,7 @@ function MainMobileMenu(): React.JSX.Element {
               'w-full rounded-xl'
             )}
           >
-            Start for free
+            Get Started
           </Link>
           <Link
             href={Routes.Login}

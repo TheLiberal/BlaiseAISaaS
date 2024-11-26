@@ -2,11 +2,11 @@ import * as React from 'react';
 import { CircleCheckBigIcon } from 'lucide-react';
 
 import { AiAdvisorCard } from '@/components/marketing/cards/ai-advisor-card';
-import { BentoAnalyticsCard } from '@/components/marketing/cards/bento-analytics-card';
-import { BentoCampaignsCard } from '@/components/marketing/cards/bento-campaigns-card';
-import { BentoCustomersCard } from '@/components/marketing/cards/bento-customers-card';
-import { BentoMagicInboxCard } from '@/components/marketing/cards/bento-magic-inbox-card';
-import { BentoPipelinesCard } from '@/components/marketing/cards/bento-pipelines-card';
+// import { BentoAnalyticsCard } from '@/components/marketing/cards/bento-analytics-card';
+// import { BentoCampaignsCard } from '@/components/marketing/cards/bento-campaigns-card';
+// import { BentoCustomersCard } from '@/components/marketing/cards/bento-customers-card';
+// import { BentoMagicInboxCard } from '@/components/marketing/cards/bento-magic-inbox-card';
+// import { BentoPipelinesCard } from '@/components/marketing/cards/bento-pipelines-card';
 import { GridSection } from '@/components/marketing/fragments/grid-section';
 import { AppInfo } from '@/constants/app-info';
 
@@ -18,15 +18,15 @@ export function Solution(): React.JSX.Element {
           <div className="container relative space-y-10">
             <div>
               <h2 className="mb-2.5 text-3xl font-semibold md:text-5xl">
-                The next-gen SaaS
+                The next-gen Customer Success Manager
               </h2>
               <p className="mt-1 max-w-2xl text-muted-foreground md:mt-6">
-                {AppInfo.APP_NAME} is the engine that builds, scales and grows
-                your company to the next level. Reminder that this is a demo and
-                some of the features below don't exists.
+                {AppInfo.APP_NAME} is the AI-powered customer success agent that
+                uses your knowledgebase, solves your customer's problems and
+                continously learns from your human support.
               </p>
             </div>
-            <div className="mx-auto xl:container xl:rounded-xl xl:bg-neutral-50 xl:p-6 dark:xl:bg-neutral-900">
+            {/* <div className="mx-auto xl:container xl:rounded-xl xl:bg-neutral-50 xl:p-6 dark:xl:bg-neutral-900">
               <div className="grid auto-rows-[minmax(200px,auto)] grid-cols-12 gap-6">
                 <BentoCustomersCard
                   className="col-span-12 md:col-span-6 xl:col-span-4"
@@ -59,25 +59,23 @@ export function Solution(): React.JSX.Element {
                   transition={{ duration: 0.5, delay: 0.8 }}
                 />
               </div>
-            </div>
+            </div> */}
             <div className="-ml-8 w-[calc(100%+64px)] border-t border-dashed sm:-ml-20 sm:w-[calc(100%+160px)]" />
             <div className="grid gap-10 sm:container lg:grid-cols-2">
               <div className="order-1 lg:order-2">
                 <h2 className="mb-2.5 mt-8 text-3xl font-semibold md:text-5xl">
-                  Your personal operating system
+                  The Only Customer Success Manager <br /> You Need
                 </h2>
                 <p className="mt-1 text-muted-foreground md:mt-6">
-                  Harness the power of AI to transform your business and
-                  automate almost everything with workflows.
+                  Use the power of AI to improve your customer experience,
+                  results and reduce costs.
                 </p>
                 <ul className="mt-6 list-none flex-wrap items-center gap-6 space-y-3 md:flex md:space-y-0">
                   {[
-                    'AI-driven insights',
-                    'Smart automation',
-                    'Adaptive workflows',
-                    'Predictive analytics',
-                    'Natural language processing',
-                    'Auto task prioritization'
+                    'AI-powered answers',
+                    'Smart suggestions',
+                    'Threaded Conversations',
+                    'Knowledgebase Retrieval'
                   ].map((feature) => (
                     <li
                       key={feature}
