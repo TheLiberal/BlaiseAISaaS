@@ -5,18 +5,24 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 const DATA = [
   {
-    name: 'Rick Sanchez',
-    role: 'Machine Learning Engineer',
-    image: '/marketing/story/rick-sanchez.webp',
-    previousRole: 'Formerly AI research engineer at Meta',
-    education: 'PhD in AI from Stanford'
+    name: 'Blaise Gulaj',
+    role: 'Co-founder & CTO',
+    image: '/marketing/story/blaise_profile_picture.webp'
   },
   {
-    name: 'Morty Smith',
-    role: 'Senior Software Engineer',
-    image: '/marketing/story/morty-smith.webp',
-    previousRole: 'Formerly backend engineer at Google',
-    education: 'BSc in Computer Science from UC Berkeley'
+    name: 'Jordan Lee',
+    role: 'Co-founder & CEO',
+    image: '/marketing/story/jordan_profile_picture.webp'
+  },
+  {
+    name: 'Matthew Jones',
+    role: 'Co-founder & COO',
+    image: '/marketing/story/matthew_profile_picture.webp'
+  },
+  {
+    name: 'Jacob Le Vine',
+    role: 'Co-founder & CMO',
+    image: '/marketing/story/jacob_profile_picture.webp'
   }
 ];
 
@@ -25,7 +31,7 @@ export function StoryTeam(): React.JSX.Element {
     <GridSection>
       <div className="container max-w-6xl py-20">
         <h2 className="mb-16 text-sm font-medium uppercase tracking-wider text-muted-foreground ">
-          The visionaries
+          The Team
         </h2>
         <div className="flex flex-wrap gap-24">
           {DATA.map((person, index) => (
@@ -50,10 +56,6 @@ export function StoryTeam(): React.JSX.Element {
                 <div>
                   <h3 className="text-lg font-medium">{person.name}</h3>
                   <p className="text-primary">{person.role}</p>
-                </div>
-                <div className="space-y-2 text-sm text-muted-foreground">
-                  <p>{person.previousRole}</p>
-                  <p>{person.education}</p>
                 </div>
               </div>
             </div>

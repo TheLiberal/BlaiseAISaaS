@@ -15,7 +15,7 @@ const DATA = [
   },
   {
     icon: <Users2Icon className="size-5 shrink-0" />,
-    title: 'Inclusive environment',
+    title: 'Big Mission',
     description:
       'Our diverse and collaborative team welcomes individuals from all backgrounds.'
   },

@@ -12,21 +12,25 @@ export function StoryVision(): React.JSX.Element {
               Our vision
             </h2>
             <p className="text-2xl font-medium leading-relaxed md:text-3xl">
-              "CRM shouldn't just store relationships — it should actively help
-              you build better ones with AI."
+              "Customer support shouldn't just answer questions — it should
+              actively solve problems and drive student success."
             </p>
           </div>
           <div className="space-y-6 text-base text-muted-foreground md:text-lg">
             <p>
-              Traditional CRMs were built for a different era. We're creating
-              the first true AI-native platform that automates the mundane and
-              amplifies what humans do best: building meaningful relationships.
+              Traditional customer support was built for a different era. We're
+              creating the first true AI customer success agent that goes beyond
+              basic Q&A to deliver personalized, proactive support at scale for
+              education companies.
             </p>
             <p>
-              By combining cutting-edge AI with decades of sales expertise,
-              we've created a CRM that actually helps you sell better —
-              predicting outcomes, suggesting next steps, and handling routine
-              tasks automatically.
+              By combining advanced AI technology with deep education industry
+              expertise, we've created an intelligent agent that enhances your
+              support team's capabilities—solving routine problems
+              automatically, reducing response times, and empowering human
+              agents to focus on complex cases that truly need their expertise.
+              The result? Higher student satisfaction, lower support costs, and
+              better learning outcomes.
             </p>
           </div>
         </div>

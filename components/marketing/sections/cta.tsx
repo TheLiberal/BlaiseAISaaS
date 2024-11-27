@@ -20,6 +20,7 @@ export function CTA(): React.JSX.Element {
           className="w-full"
         >
           <div
+            id="book-demo"
             className="mx-auto w-full"
             style={{ maxWidth: '1100px' }}
           >

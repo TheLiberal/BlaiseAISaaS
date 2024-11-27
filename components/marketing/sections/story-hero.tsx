@@ -9,8 +9,8 @@ export function StoryHero(): React.JSX.Element {
       <div className="container py-24 md:py-32">
         <SiteHeading
           badge="Our Story"
-          title="Reinventing CRM in the AI era"
-          description="From a bold vision to revolutionize CRM to the fastest-growing platform in history. We're building the intelligent CRM that works for you, not the other way around."
+          title="Reinventing Customer Support in the AI era"
+          description="By combining AI-powered assistance with human expertise, we've helped hundreds of businesses increase satisfaction while reducing costs. Today, we process over 9,000 customer inquiries daily, setting new standards for intelligent, scalable support."
         />
       </div>
     </GridSection>

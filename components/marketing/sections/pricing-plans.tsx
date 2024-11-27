@@ -20,19 +20,7 @@ enum Feature {
 }
 
 const plans = {
-  free: {
-    [Feature.AICustomerScoring]: '100 contacts/mo',
-    [Feature.SmartEmailAnalysis]: '1,000 emails/mo',
-    [Feature.TeamSeats]: 'Up to 2'
-  },
-  pro: {
-    [Feature.AICustomerScoring]: 'Unlimited contacts',
-    [Feature.SmartEmailAnalysis]: 'Unlimited emails',
-    [Feature.LeadPredictions]: 'Advanced AI models',
-    [Feature.SentimentAnalysis]: 'Real-time & Advanced',
-    [Feature.TeamSeats]: 'Up to 120'
-  },
-  enterprise: {
+  custom: {
     [Feature.AICustomerScoring]: 'Custom volume & features',
     [Feature.SmartEmailAnalysis]: 'Unlimited emails',
     [Feature.LeadPredictions]: 'Custom AI models',
@@ -49,16 +37,14 @@ export function PricingPlans(): React.JSX.Element {
       <div className="container space-y-20 py-20">
         <SiteHeading
           badge="Pricing"
-          title="Plans for your business"
-          description={`From early-stage startups to growing enterprises, ${AppInfo.APP_NAME} has you covered.`}
+          title="Book a call to learn more"
+          description={`Let's discuss how ${AppInfo.APP_NAME} can help your business succeed.`}
         />
 
         <div className="max-w-7xl">
           <div className="flex justify-center">
-            <div className="grid w-full max-w-6xl gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-              <FreeTierCard />
-              <ProTierCard />
-              <EnterpriseTierCard />
+            <div className="w-full max-w-lg">
+              <CustomTierCard />
             </div>
           </div>
         </div>
@@ -67,6 +53,8 @@ export function PricingPlans(): React.JSX.Element {
   );
 }
 
+{
+  /* Commented out original cards for future reference
 function FreeTierCard(): React.JSX.Element {
   return (
     <div className="flex h-full flex-col rounded-lg border p-8">
@@ -200,7 +188,53 @@ function EnterpriseTierCard(): React.JSX.Element {
           'group mt-auto h-11 w-full rounded-xl bg-blue-600 text-white shadow-none transition-colors duration-200 hover:bg-blue-700'
         )}
       >
-        Contact Us
+        Contact Sales
+        <ChevronRight className="ml-1 size-4 transition-transform group-hover:translate-x-0.5" />
+      </Link>
+    </div>
+  );
+}
+*/
+}
+
+function CustomTierCard(): React.JSX.Element {
+  return (
+    <div className="relative flex h-full flex-col rounded-lg border border-primary p-8">
+      <div className="relative z-10 grow">
+        <div className="mb-8">
+          <h2 className="mb-2 text-xl font-medium">Custom Solution</h2>
+          <div className="mb-2 flex items-baseline">
+            <span className="text-4xl font-bold">Custom</span>
+          </div>
+          <p className="text-sm text-muted-foreground">
+            Tailored to your business needs
+          </p>
+        </div>
+        <ul className="mb-8 space-y-4">
+          {Object.keys(plans.custom).map((key) => (
+            <li
+              key={key}
+              className="flex items-start"
+            >
+              <CheckIcon className="mt-1 size-4" />
+              <div className="ml-3">
+                <div className="text-sm font-medium">{key}</div>
+                <div className="text-sm text-muted-foreground">
+                  {plans.custom[key as keyof typeof plans.custom]}
+                </div>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <Link
+        href={Routes.Root + '#book-demo'}
+        className={cn(
+          buttonVariants({ variant: 'default' }),
+          'group mt-auto h-11 w-full rounded-xl bg-white text-black shadow-none transition-colors duration-200 hover:bg-gray-100'
+        )}
+      >
+        Book a Call
         <ChevronRight className="ml-1 size-4 transition-transform group-hover:translate-x-0.5" />
       </Link>
     </div>

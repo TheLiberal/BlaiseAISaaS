@@ -1,22 +1,8 @@
 import * as React from 'react';
 import { CubeIcon, PaperPlaneIcon } from '@radix-ui/react-icons';
-import {
-  BookIcon,
-  BookOpenIcon,
-  CircuitBoardIcon,
-  CuboidIcon,
-  FileBarChartIcon,
-  LayoutIcon,
-  PlayIcon
-} from 'lucide-react';
+import { BookIcon, BookOpenIcon, CuboidIcon, LayoutIcon } from 'lucide-react';
 
-import {
-  FacebookIcon,
-  InstagramIcon,
-  LinkedInIcon,
-  TikTokIcon,
-  XIcon
-} from '@/components/ui/brand-icons';
+import { LinkedInIcon, XIcon } from '@/components/ui/brand-icons';
 import { Routes } from '@/constants/routes';
 
 export const MENU_LINKS = [
@@ -24,37 +10,10 @@ export const MENU_LINKS = [
     title: 'Product',
     items: [
       {
-        title: 'Feature 1',
-        description: 'Short description here',
+        title: 'Blaise AI - Customer Support Agent',
+        description:
+          "Blaise AI is the AI-powered customer success agent that solves your customer's problems and continously learns from your human support.",
         icon: <CubeIcon className="size-5 shrink-0" />,
-        href: '#',
-        external: false
-      },
-      {
-        title: 'Feature 2',
-        description: 'Short description here',
-        icon: <PlayIcon className="size-5 shrink-0" />,
-        href: '#',
-        external: false
-      },
-      {
-        title: 'Feature 3',
-        description: 'Short description here',
-        icon: <CircuitBoardIcon className="size-5 shrink-0" />,
-        href: '#',
-        external: false
-      },
-      {
-        title: 'Feature 4',
-        description: 'Short description here',
-        icon: <LayoutIcon className="size-5 shrink-0" />,
-        href: '#',
-        external: false
-      },
-      {
-        title: 'Feature 5',
-        description: 'Short description here',
-        icon: <FileBarChartIcon className="size-5 shrink-0" />,
         href: '#',
         external: false
       }
@@ -106,13 +65,7 @@ export const MENU_LINKS = [
 export const FOOTER_LINKS = [
   {
     title: 'Product',
-    links: [
-      { name: 'Feature 1', href: '#', external: false },
-      { name: 'Feature 2', href: '#', external: false },
-      { name: 'Feature 3', href: '#', external: false },
-      { name: 'Feature 4', href: '#', external: false },
-      { name: 'Feature 5', href: '#', external: false }
-    ]
+    links: [{ name: 'Blaise AI', href: '#', external: false }]
   },
   {
     title: 'Resources',
@@ -150,21 +103,6 @@ export const SOCIAL_LINKS = [
     name: 'LinkedIn',
     href: '#',
     icon: <LinkedInIcon className="size-4 shrink-0" />
-  },
-  {
-    name: 'Facebook',
-    href: '#',
-    icon: <FacebookIcon className="size-4 shrink-0" />
-  },
-  {
-    name: 'Instagram',
-    href: '#',
-    icon: <InstagramIcon className="size-4 shrink-0" />
-  },
-  {
-    name: 'TikTok',
-    href: '#',
-    icon: <TikTokIcon className="size-4 shrink-0" />
   }
 ];
 

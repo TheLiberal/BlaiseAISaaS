@@ -1,8 +1,5 @@
-'use client';
-
 import * as React from 'react';
 import Link from 'next/link';
-import { toast } from 'sonner';
 
 import { ExternalLink } from '@/components/marketing/fragments/external-link';
 import { ThemeSwitcher } from '@/components/marketing/fragments/theme-switcher';
@@ -10,21 +7,16 @@ import {
   FOOTER_LINKS,
   SOCIAL_LINKS
 } from '@/components/marketing/marketing-links';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
 import { Logo } from '@/components/ui/logo';
 import { Separator } from '@/components/ui/separator';
 import { AppInfo } from '@/constants/app-info';
 
 export function Footer(): React.JSX.Element {
-  const handleSubscribe = (): void => {
-    toast.error("I'm not implemented yet.");
-  };
   return (
     <footer className="px-2 pb-10 pt-20 sm:container">
       <h2 className="sr-only">Footer</h2>
       <div className="container">
-        <div className="xl:grid xl:grid-cols-6 xl:gap-8">
+        <div className="xl:grid xl:grid-cols-5 xl:gap-8">
           <div className="hidden xl:block">
             <Logo />
             <p className="mt-3 text-xs text-muted-foreground">
@@ -60,28 +52,6 @@ export function Footer(): React.JSX.Element {
                 </ul>
               </div>
             ))}
-          </div>
-          <div className="mt-10 space-y-4 lg:col-span-2 xl:mt-0">
-            <h3 className="text-sm font-semibold text-foreground">
-              Subscribe to our newsletter
-            </h3>
-            <form className="py-2 sm:flex sm:max-w-md">
-              <div className="w-full min-w-0">
-                <Input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="w-full"
-                />
-              </div>
-              <div className="mt-3 sm:ml-4 sm:mt-0 sm:shrink-0">
-                <Button
-                  type="button"
-                  onClick={handleSubscribe}
-                >
-                  Subscribe
-                </Button>
-              </div>
-            </form>
           </div>
         </div>
         <div className="mt-8 border-t pt-8">

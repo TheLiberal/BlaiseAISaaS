@@ -134,10 +134,10 @@ export function TermsOfUse(): React.JSX.Element {
             For questions or concerns, contact us at:
             <br />
             <a
-              href="mailto:support@yourdomain.com"
+              href="mailto:support@blaiseai.com"
               className="text-blue-500 hover:underline"
             >
-              support@yourdomain.com
+              support@blaiseai.com
             </a>
           </p>
         </div>

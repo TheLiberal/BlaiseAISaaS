@@ -4,22 +4,22 @@ import { GridSection } from '@/components/marketing/fragments/grid-section';
 
 const DATA = [
   {
-    date: '2022',
-    title: 'The journey begins',
+    date: '2024, October 20th',
+    title: 'Initial Test Cohort',
     description:
-      'Started building an AI-powered CRM to transform sales workflows and boost productivity.'
+      'Launched Blaise AI to a test cohort of ~40 customers and received overwhelmingly positive feedback after the first 2 weeks.'
   },
   {
-    date: '2023',
-    title: 'First milestones',
+    date: '2024, November 6th',
+    title: 'First Official Roll-out',
     description:
-      'Launched our platform, earning early customers and recognition for real-time insights and deal predictions.'
+      'Launched Blaise AI to our first community of over 526 customers.'
   },
   {
-    date: '2024',
-    title: 'Scaling and innovation',
+    date: '2024, January 20th',
+    title: 'Growth Acceleration',
     description:
-      'Expanded features with advanced AI analytics, onboarding more customers, and preparing for rapid growth.'
+      'By now we’ve solved over 10,015 customer problems, setting new standards for intelligent, scalable support.'
   }
 ];
 

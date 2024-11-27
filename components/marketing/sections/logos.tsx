@@ -1,12 +1,8 @@
 import * as React from 'react';
 import Image from 'next/image';
-import FEGP from 'public/marketing/logos/fegp.webp';
-import TGP from 'public/marketing/logos/tgp.webp';
 
 import { BlurFade } from '@/components/marketing/fragments/blur-fade';
 import { GridSection } from '@/components/marketing/fragments/grid-section';
-
-const DATA = [{ icon: FEGP }, { icon: TGP }];
 
 export function Logos(): React.JSX.Element {
   return (
@@ -18,19 +14,30 @@ export function Logos(): React.JSX.Element {
           </p>
         </BlurFade>
         <div className="grid grid-cols-2 gap-6 md:grid-cols-4 lg:max-w-4xl lg:gap-10">
-          {DATA.map(({ icon: Icon }, index) => (
-            <BlurFade
-              key={index}
-              delay={0.2 + index * 0.2}
-              className="flex items-center justify-center text-neutral-700 dark:text-neutral-300"
-            >
-              <Image
-                src={Icon}
-                alt="logo"
-                className="h-10 w-auto"
-              />
-            </BlurFade>
-          ))}
+          <BlurFade
+            delay={0.2}
+            className="flex items-center justify-center text-neutral-700 dark:text-neutral-300"
+          >
+            <Image
+              src="/marketing/logos/fegp_logo.svg"
+              alt="FEGP Logo"
+              width={120}
+              height={40}
+              className="h-10 w-auto"
+            />
+          </BlurFade>
+          <BlurFade
+            delay={0.4}
+            className="flex items-center justify-center text-neutral-700 dark:text-neutral-300"
+          >
+            <Image
+              src="/marketing/logos/tgp_logo.svg"
+              alt="TGP Logo"
+              width={120}
+              height={40}
+              className="h-10 w-auto"
+            />
+          </BlurFade>
         </div>
       </div>
     </GridSection>
