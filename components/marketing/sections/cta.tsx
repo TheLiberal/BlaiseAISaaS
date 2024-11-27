@@ -1,12 +1,10 @@
-'use client';
-
 import * as React from 'react';
 
 import { BlurFade } from '@/components/marketing/fragments/blur-fade';
 import { GridSection } from '@/components/marketing/fragments/grid-section';
 import { TextGenerateEffect } from '@/components/marketing/fragments/text-generate-effect';
 
-import { Calendly } from '../calendly';
+import { CalEmbed } from '../cal';
 
 export function CTA(): React.JSX.Element {
   return (
@@ -21,11 +19,10 @@ export function CTA(): React.JSX.Element {
         >
           <div
             id="book-demo"
-            className="mx-auto w-full"
-            style={{ maxWidth: '1100px' }}
+            className="w-full max-w-7xl mx-auto bg-background"
           >
-            <div className="h-[800px] overflow-hidden">
-              <Calendly eventLink="https://calendly.com/blaise-ai/implementation-consultation" />
+            <div className="h-[700px] overflow-hidden bg-background">
+              <CalEmbed />
             </div>
           </div>
         </BlurFade>

@@ -81,7 +81,7 @@ function HeroButtons(): React.JSX.Element {
       className="mx-auto flex w-full flex-col gap-2 px-7 sm:w-auto sm:flex-row sm:px-0"
     >
       <Link
-        href={Routes.SignUp}
+        href={Routes.Root + '#demo-video'}
         className={cn(
           buttonVariants({
             variant: 'default'
@@ -92,7 +92,7 @@ function HeroButtons(): React.JSX.Element {
         Watch a demo
       </Link>
       <Link
-        href={Routes.Contact}
+        href={Routes.Root + '#book-demo'}
         className={cn(
           buttonVariants({
             variant: 'outline'
@@ -201,7 +201,10 @@ function HeroIllustration(): React.JSX.Element {
         <div className="relative mb-1 w-full rounded-xl dark:border-none dark:bg-background">
           <SupportiveDashedGridLines />
           <div className="relative z-20 bg-background">
-            <UnderlinedTabsContent value="feature1">
+            <UnderlinedTabsContent
+              value="feature1"
+              id="#book-demo"
+            >
               <HeroVideoDialog
                 className="block dark:hidden"
                 animationStyle="from-center"

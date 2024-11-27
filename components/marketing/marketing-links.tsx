@@ -14,7 +14,7 @@ export const MENU_LINKS = [
         description:
           "Blaise AI is the AI-powered customer success agent that solves your customer's problems and continously learns from your human support.",
         icon: <CubeIcon className="size-5 shrink-0" />,
-        href: '#',
+        href: '/',
         external: false
       }
     ]

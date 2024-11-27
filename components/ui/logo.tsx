@@ -28,7 +28,7 @@ export function Logo({
         <div className="flex size-9 items-center justify-center p-1">
           <div className="flex size-7 items-center justify-center rounded-md border text-primary">
             <Image
-              src="/BlaiseAILogo.png"
+              src="/BlaiseAILogo.webp"
               alt="BlaiseAI Logo"
               width={16}
               height={16}

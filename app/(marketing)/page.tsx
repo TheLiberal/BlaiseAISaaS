@@ -1,13 +1,14 @@
 import * as React from 'react';
 
-import { CTA } from '@/components/marketing/sections/cta';
+// import { CTA } from '@/components/marketing/sections/cta';
 import { FAQ } from '@/components/marketing/sections/faq';
 import { Hero } from '@/components/marketing/sections/hero';
 import { Logos } from '@/components/marketing/sections/logos';
 import { Problem } from '@/components/marketing/sections/problem';
 import { Solution } from '@/components/marketing/sections/solution';
 import { Stats } from '@/components/marketing/sections/stats';
-import { Testimonials } from '@/components/marketing/sections/testimonials';
+
+// import { Testimonials } from '@/components/marketing/sections/testimonials';
 
 export default function IndexPage(): React.JSX.Element {
   return (
@@ -17,9 +18,9 @@ export default function IndexPage(): React.JSX.Element {
       <Problem />
       <Solution />
       <Stats />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <FAQ />
-      <CTA />
+      {/* <CTA /> */}
     </>
   );
 }

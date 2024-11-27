@@ -9,7 +9,6 @@ import {
   AccordionItem,
   AccordionTrigger
 } from '@/components/ui/accordion';
-import { Alert, AlertDescription } from '@/components/ui/alert';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const DATA_CARDS = [
@@ -75,16 +74,6 @@ export function TermsOfUse(): React.JSX.Element {
           title="Terms of Use"
           description="By accessing our platform, you agree to the terms outlined below. Please read them carefully to ensure you understand your rights and responsibilities."
         />
-        <Alert
-          variant="warning"
-          className="rounded-lg border border-yellow-500 dark:border-yellow-900"
-        >
-          <AlertDescription className="ml-3 text-base">
-            These terms provide a general framework. They should be reviewed and
-            customized by a legal professional to suit your jurisdiction and use
-            case.
-          </AlertDescription>
-        </Alert>
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {DATA_CARDS.map((item, index) => (

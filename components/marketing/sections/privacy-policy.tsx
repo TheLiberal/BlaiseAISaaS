@@ -9,7 +9,6 @@ import {
   AccordionItem,
   AccordionTrigger
 } from '@/components/ui/accordion';
-import { Alert, AlertDescription } from '@/components/ui/alert';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const DATA_CARDS = [
@@ -70,16 +69,6 @@ export function PrivacyPolicy(): React.JSX.Element {
           title="Privacy Policy"
           description="Learn how we collect, use, and protect your data. Please read carefully to understand our practices."
         />
-        <Alert
-          variant="warning"
-          className="rounded-lg border border-yellow-500 dark:border-yellow-900"
-        >
-          <AlertDescription className="ml-3 text-base">
-            This policy provides a general framework. It should be reviewed and
-            customized by a legal professional to suit your jurisdiction and use
-            case.
-          </AlertDescription>
-        </Alert>
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {DATA_CARDS.map((item, index) => (
@@ -129,10 +118,10 @@ export function PrivacyPolicy(): React.JSX.Element {
             For questions or concerns, contact us at:
             <br />
             <a
-              href="mailto:support@yourdomain.com"
+              href="mailto:support@blaiseai.com"
               className="text-blue-500 hover:underline"
             >
-              support@yourdomain.com
+              support@blaiseai.com
             </a>
           </p>
         </div>

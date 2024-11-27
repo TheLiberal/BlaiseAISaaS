@@ -16,7 +16,7 @@ export function Calendly({ eventLink }: CalendlyProps) {
       <div
         className="calendly-inline-widget size-full"
         data-url={`${eventLink}?hide_gdpr_banner=1&background_color=050505&text_color=ffffff&primary_color=ffffff`}
-        style={{ minWidth: '320px', width: '100%', height: '100%' }}
+        style={{ height: '900px', width: '800px' }}
       />
     </>
   );

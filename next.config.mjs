@@ -97,6 +97,11 @@ const nextConfig = {
         source: '/dashboard/settings/organization',
         destination: '/dashboard/settings/organization/information',
         permanent: false
+      },
+      {
+        source: '/auth/:path*',
+        destination: '/',
+        permanent: false
       }
     ];
   },
