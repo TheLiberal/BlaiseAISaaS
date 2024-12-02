@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-// import { CTA } from '@/components/marketing/sections/cta';
+import { CTA } from '@/components/marketing/sections/cta';
 import { FAQ } from '@/components/marketing/sections/faq';
 import { Hero } from '@/components/marketing/sections/hero';
 import { Logos } from '@/components/marketing/sections/logos';
@@ -20,7 +20,7 @@ export default function IndexPage(): React.JSX.Element {
       <Stats />
       {/* <Testimonials /> */}
       <FAQ />
-      {/* <CTA /> */}
+      <CTA />
     </>
   );
 }

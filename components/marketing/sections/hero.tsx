@@ -6,9 +6,10 @@ import { motion } from 'framer-motion';
 import { ChevronRightIcon } from 'lucide-react';
 
 import { GridSection } from '@/components/marketing/fragments/grid-section';
+// import HeroVideoDialog from '@/components/ui/hero-video-dialog';
+import WistiaVideo from '@/components/marketing/wistia';
 import { Badge } from '@/components/ui/badge';
 import { buttonVariants } from '@/components/ui/button';
-import HeroVideoDialog from '@/components/ui/hero-video-dialog';
 import { ScrollArea, ScrollBar } from '@/components/ui/scroll-area';
 import { Separator } from '@/components/ui/separator';
 import { UnderlinedTabs, UnderlinedTabsContent } from '@/components/ui/tabs';
@@ -205,26 +206,33 @@ function HeroIllustration(): React.JSX.Element {
               value="feature1"
               id="#book-demo"
             >
-              <HeroVideoDialog
+              {/* <HeroVideoDialog
                 className="block dark:hidden"
                 animationStyle="from-center"
-                videoSrc="https://www.youtube.com/embed/qh3NGpYRG3I?si=4rb-zSdDkVK9qxxb"
-                thumbnailSrc="https://startup-template-sage.vercel.app/hero-light.png"
+                videoSrc="https://fast.wistia.com/embed/medias/aromj3m022.jsonp"
+                thumbnailSrc="https://fast.wistia.com/embed/medias/aromj3m022/swatch"
                 thumbnailAlt="Hero Video"
               />
               <HeroVideoDialog
                 className="hidden dark:block"
                 animationStyle="from-center"
-                videoSrc="https://www.youtube.com/embed/qh3NGpYRG3I?si=4rb-zSdDkVK9qxxb"
-                thumbnailSrc="https://startup-template-sage.vercel.app/hero-dark.png"
+                videoSrc="https://fast.wistia.com/embed/medias/aromj3m022.jsonp"
+                thumbnailSrc="https://fast.wistia.com/embed/medias/aromj3m022/swatch"
                 thumbnailAlt="Hero Video"
-              />
+              /> */}
+              {/* <div className="max-w-3xl mx-auto"> */}
+              <WistiaVideo videoId="aromj3m022" />
+              {/* </div> */}
             </UnderlinedTabsContent>
           </div>
         </div>
       </UnderlinedTabs>
     </motion.div>
   );
+}
+
+{
+  /* <script src="https://fast.wistia.com/embed/medias/aromj3m022.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:55.0% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_aromj3m022 seo=true videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/aromj3m022/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div> */
 }
 
 export function Hero(): React.JSX.Element {
